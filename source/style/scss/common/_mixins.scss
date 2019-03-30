@@ -1,0 +1,18 @@
+@mixin flex-columns($currentColCount, $margin: 0px, $colCount: 12) {
+    flex-basis: calc((100% / #{$colCount} * #{$currentColCount}) - (#{$margin} * 2));
+    max-width: calc((100% / #{$colCount} * #{$currentColCount}) - (#{$margin} * 2));
+    margin-right: $margin;
+    margin-left: $margin;
+}
+
+@mixin media($breakpoint) {
+    @media screen and (max-width: #{$breakpoint}px) {
+        @content;
+    }
+}
+
+@mixin container($containerWidth, $containerPadding) {
+    max-width: $containerWidth;
+    margin: 0 auto;
+    padding: 0 $containerPadding;
+}
