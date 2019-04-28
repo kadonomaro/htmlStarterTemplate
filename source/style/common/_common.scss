@@ -48,3 +48,15 @@ img {
     right: 0;
     z-index: -1;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    border: 0;
+    overflow: hidden;
+
+}
