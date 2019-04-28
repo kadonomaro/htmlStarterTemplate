@@ -16,3 +16,12 @@
     margin: 0 auto;
     padding: 0 $containerPadding;
 }
+
+@function calculateRem($root, $px) {
+    $remSize: $px / $root;
+    @return #{$remSize}rem;
+  }
+
+@mixin toRem($root, $px) {
+    font-size: calculateRem($root, $px);
+}
