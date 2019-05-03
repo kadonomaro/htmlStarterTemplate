@@ -1,5 +1,5 @@
-.jshintrc
-gulpfile.js
+#.jshintrc
+#gulpfile.js
 package.json
 package-lock.json
 
