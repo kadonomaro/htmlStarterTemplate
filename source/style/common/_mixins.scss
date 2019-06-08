@@ -25,3 +25,12 @@
 @mixin toRem($root, $px) {
     font-size: calculateRem($root, $px);
 }
+
+@function calculateRatio($width, $height) {
+    $ratio: ($height / $width);
+    @return percentage($number: $ratio);
+}
+
+@mixin ratio($width, $height) {
+    padding-bottom: calculateRatio($width, $height);
+}
