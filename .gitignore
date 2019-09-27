@@ -1,6 +1,4 @@
 #.jshintrc
-#gulpfile.js
-package.json
 package-lock.json
 
 *.txt
